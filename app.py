@@ -25,7 +25,6 @@ st.set_page_config(
 st.title("🍇Wine Quality Predictor")
 st.markdown(
     """ 
-    Use this tool to input the chemical properties of a wine sample and discover whether it’s likely to be **premium quality**.  
     Powered by a trained machine learning model. 🧪🍷
     """
 )
@@ -62,10 +61,3 @@ if st.button("🍷 Predict Wine Quality"):
 
     st.metric(label="Confidence Score", value=f"{proba:.1%}")
     st.caption("The confidence score indicates how likely the wine is to be of good quality.")
-
-# Footer
-st.markdown("---")
-st.markdown(
-    "<div style='text-align: center;'><small>Crafted with ❤️ by Rencent Claud. 2025</small></div>",
-    unsafe_allow_html=True
-)
